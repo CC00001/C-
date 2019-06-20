@@ -1,0 +1,46 @@
+#include <iostream>
+#include "circle.h"
+using namespace std;
+
+int main()
+{
+ Circle myCircle;
+ Circle *pmyCircle = NULL;
+ pmyCircle = &myCircle;
+ double x, y, r, xpoint, ypoint;
+
+
+ cout << "Enter X coordinate:";
+ cin >> x;
+ cout << "Enter Y coordinate:";
+ cin >> y;
+ cout << "Enter radius:";
+ cin >> r;
+ cout << "Enter xValue:";
+ cin >> xpoint;
+ cout << "Enter yValue:";
+ cin >> ypoint;
+
+ pmyCircle->setX(x);
+ pmyCircle->setY(y);
+ pmyCircle->setRadius(r);
+
+ cout << endl;
+ cout << "X coordinate:" << pmyCircle->getX() << endl;
+ cout << "Y coordinate:" << pmyCircle->getY() << endl;
+ cout << "Radius is " << pmyCircle->getRadius() << endl;
+ cout << "Area of circle is " << pmyCircle->getArea() << endl;
+ cout << "X Value:" << xpoint << endl;
+ cout << "Y Value:" << ypoint << endl;
+
+ bool within =  pmyCircle->containsPoint(xpoint, ypoint);
+
+ if(within == true)
+ {
+  cout << "True" << endl;
+ }
+ else if(within == false)
+ {
+  cout << "False" << endl;
+ }
+}

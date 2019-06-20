@@ -1,0 +1,26 @@
+#ifndef CIRCLE_H
+#define CIRCLE_H
+
+//Setting a class
+class Circle
+{
+ private:
+ double x, y, r;
+ double xcoordinate, ycoordinate, radius;
+ double pi = 3.14;
+
+ public:
+ void setRadius(double r);
+ void setX(double x);
+ void setY(double y);
+ double getRadius() const
+ {return radius;}
+ double getX() const
+ {return xcoordinate;}
+ double getY() const
+ {return ycoordinate;}
+ double getArea();
+ bool containsPoint(double xValue, double yValue);
+};
+
+#endif

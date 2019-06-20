@@ -1,0 +1,33 @@
+1/22/2018
+
+Loops
+
+while(expression);
+statments;
+Doese the following print anythng out?
+
+float myMoney = 5.00;
+while (myMoney < 6.95)
+
+cout << "Darn, not enough money for lunch. \n;
+
+use a while loop to validate user input
+
+int number;
+cout << "Enter a number between I and 100\n";
+cin >> number;
+
+while (number < 1 || number > 100)
+{
+cout << "Error: the number needs to be between 1 and 100!\n";
+cout << "Try again;\n";
+cin >> number;
+
+
+}
+
+//nested for loop
+
+int minutes, seconds;
+
+
